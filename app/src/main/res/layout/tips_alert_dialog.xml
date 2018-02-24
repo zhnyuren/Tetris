@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/tips_dialog_content"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:background="#023E7C"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:id="@+id/tips_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TIPS"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:textSize="25sp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tips_dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="A black bomb can help you blast the cells around it.\nYou will enter crazy mode after you get 5000 points."
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/tips_dialog_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_main"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:text="OK"
+                android:textSize="25sp"
+                android:textColor="#BEBEBE" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/about_dialog_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:id="@+id/about_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ABOUT"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:textSize="25sp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/about_dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Presented by FlynnZ, 15081070\n作者：张雨任"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/about_dialog_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="OK"
+                android:textSize="25sp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textColor="#BEBEBE" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

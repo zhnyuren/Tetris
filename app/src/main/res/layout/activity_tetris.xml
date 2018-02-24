@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flynnz.tetris.Tetris"
+    android:background="@drawable/main_background">
+
+    <com.flynnz.tetris.TetrisView
+        android:id="@+id/main_game_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorWhite"/>
+
+    <com.flynnz.tetris.ForeshowView
+        android:id="@+id/foreshowView"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"/>
+    
+    <LinearLayout
+        android:id="@+id/score_area"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif-monospace"
+                android:text="\nSCORE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textSize="26dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="\nLEVEL" />
+
+            <TextView
+                android:id="@+id/level_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="26sp"
+                android:text="1" />
+
+        </LinearLayout>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="LEFT"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:layout_marginLeft="5dp"
+            android:onClick="goLeft"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/down_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="DOWN"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:layout_marginLeft="5dp"
+            android:onClick="goBottom"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/rotate_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="ROTATE"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:layout_marginLeft="5dp"
+            android:onClick="goRotate"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="RIGHT"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="goRight"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

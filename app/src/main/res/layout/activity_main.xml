@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+    <!--android:background="@drawable/main_background"-->
+
+    <com.flynnz.tetris.TapTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="TAP TO CONTINUE"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:textAllCaps="true"
+        android:id="@+id/tapTextView3"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shiyong"
+        android:layout_above="@+id/tapTextView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp" />
+
+    <Button
+        android:id="@+id/high_score_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_main"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="runAlertDialogHighScore"
+        android:text="SCORE"
+        android:textSize="10sp"
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/tips_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_main"
+        android:onClick="runAlertDialogTips"
+        android:text="TIPS?"
+        android:textSize="10sp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignTop="@+id/high_score_button"
+        android:layout_alignBottom="@+id/high_score_button"
+        android:layout_toRightOf="@+id/high_score_button" />
+
+    <Button
+        android:id="@+id/music_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/tips_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_main"
+        android:text="MUSIC"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        android:onClick="musicPauseStart"/>
+
+    <Button
+        android:id="@+id/crazy_mode_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_main"
+        android:layout_alignParentRight="true"
+        android:text="CRAZY MODE"
+        android:textColor="@color/colorWhite"
+        android:textSize="9sp"
+        android:onClick="enterCrazyMode"/>
+
+</RelativeLayout>

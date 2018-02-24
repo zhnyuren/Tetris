@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    tools:context="com.flynnz.tetris.Tetris">
+
+    <RelativeLayout
+        android:id="@+id/pause_dialog_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:id="@+id/pause_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PAUSE"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:textSize="25sp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/pause_dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="0"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/pause_dialog_ok"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="CONTINUE"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#BEBEBE" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
